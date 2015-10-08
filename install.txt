@@ -1,0 +1,6 @@
+charset,Shift_JIS
+name,ƒfƒx‚É‚µ‚«
+type,ghost
+directory,devnishi
+refresh,1
+refreshundeletemask,satori_savedata.txt

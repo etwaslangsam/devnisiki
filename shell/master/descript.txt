@@ -1,0 +1,16 @@
+charset,Shift_JIS
+type,shell
+
+name,”é‘‚É‚µ‚« -type B-
+id,NISHIKI the Secretary type B
+
+craftman,gallnuts
+craftmanw,‚à‚Á‚µ‚å‚­‚µ
+craftmanurl,http://page.freett.com/gallnuts/
+
+sakura.balloon.offsetx,0
+sakura.balloon.offsety,0
+
+menu.background.bitmap.filename,menu_background.png
+menu.foreground.bitmap.filename,menu_foreground.png
+menu.sidebar.bitmap.filename,menu_sidebar.png

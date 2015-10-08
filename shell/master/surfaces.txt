@@ -1,0 +1,89 @@
+charset,Shift_JIS
+
+descript
+{
+version,1
+}
+
+// 当たり判定毎のカーソル指定　※SSPのみ有効
+sakura.cursor
+{
+mouseup0,head,system:hand
+mousedown0,head,system:finger
+
+mouseup1,hand,system:hand
+mousedown1,hand,system:grip
+
+mouseup2,breast,system:hand
+mousedown2,breast,system:grip
+
+mouseup3,skirt,system:hand
+mousedown3,skirt,system:grip
+}
+
+
+// 素（element合成なしのsurface00.pngそのまま）
+surface0
+{
+collision0,92,56,230,121,head
+}
+
+// 照れ（姿勢正面d + 目正面c00 + 口正面c00 + メガネ正面c）
+surface1
+{
+collision0,93,73,224,147,head
+}
+
+// 驚き（姿勢正面b + 目正面b00 + 口正面b06 + メガネ正面b + 汗）
+surface2
+{
+collision0,93,73,224,147,head
+}
+
+// 不安（姿勢横a + 目横a06 + 口横a07 + 前髪横a + メガネ横a）
+surface3
+{
+collision0,72,78,200,149,head
+}
+
+// 落ち込み（姿勢正面c + 目正面c05 + 口正面c04 + 前髪正面c + メガネ正面c）
+surface4
+{
+collision0,93,73,224,147,head
+}
+
+// 微笑み（姿勢正面a + 目正面a04 + 口正面a03 + 前髪正面a + メガネ正面a）
+surface5
+{
+collision0,92,56,230,121,head
+}
+
+// 目閉じ（姿勢正面a + 目正面a01 + 口正面a00 + 前髪正面a + メガネ正面a）
+surface6
+{
+collision0,92,56,230,121,head
+}
+
+// 怒り（姿勢正面c + 目正面c03 + 口正面c02 + 前髪正面c + メガネ正面c）
+surface7
+{
+collision0,93,73,224,147,head
+}
+
+// 冷笑（姿勢正面c + 目正面c00 + 口正面c05 + メガネ正面c）
+surface8
+{
+collision0,93,73,224,147,head
+}
+
+// 照れ怒り（姿勢横b + 目横b02 + 口横b01 + 前髪横b + メガネ横b）
+surface9
+{
+collision0,93,73,224,147,head
+}
+
+// ドヤ顔（姿勢正面e + 目正面b07 + 口正面b00 + 前髪正面b + メガネ正面b + 光）
+surface12
+{
+collision0,92,56,230,121,head
+}
