@@ -14,3 +14,11 @@ sakura.balloon.offsety,0
 menu.background.bitmap.filename,menu_background.png
 menu.foreground.bitmap.filename,menu_foreground.png
 menu.sidebar.bitmap.filename,menu_sidebar.png
+
+menu.background.font.color.r,100
+menu.background.font.color.g,0
+menu.background.font.color.b,255
+
+menu.foreground.font.color.r,0
+menu.foreground.font.color.g,0
+menu.foreground.font.color.b,0
