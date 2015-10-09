@@ -3,6 +3,7 @@ name,デベにしき
 type,ghost
 craftmanw,牧野信次
 craftmanurl,http://ghosthacking.webcrow.jp/index.html 
+homeurl,https://raw.githubusercontent.com/etwaslangsam/devnisiki/master/
 readme,readme.txt
 sakura.name,デベにしき
 kero.name,ゴーストにしき
