@@ -2,10 +2,12 @@
 ＊初期シェル選択3
 \p[1]\s[-1]\p[2]\s[-1]
 ：\cシェルを選んで下さい。\*
-\_q
-\![*]\q[No.1,シェルc１]　\![*]\q[No.4,シェルc４]
-\![*]\q[No.2,シェルc２]　\![*]\q[No.5,シェルc５]
-\![*]\q[No.3,シェルc３]　\![*]\q[No.6,シェルc６]
+\_q\__q[シェルc１]No.1\_b[..\..\shell\master\s1.png,inline]\__q φ
+\__q[シェルc２]No.2\_b[..\..\shell\master\s2.png,inline]\__q φ
+\__q[シェルc３]No.3\_b[..\..\shell\master\s3.png,inline]\__q
+\__q[シェルc４]No.4\_b[..\..\shell\master\s4.png,inline]\__q φ
+\__q[シェルc５]No.5\_b[..\..\shell\master\s5.png,inline]\__q φ
+\__q[シェルc６]No.6\_b[..\..\shell\master\s6.png,inline]\__q
 \_q
 
 ＊シェルc１
@@ -71,11 +73,13 @@
 
 ＊相方設定3
 ：相方を選んで下さい。\*
+\_q\__q[うにゅうシェルc１]No.1\_b[..\..\shell\master\u1.png,inline]\__q φ
+\__q[うにゅうシェルc２]No.2\_b[..\..\shell\master\u2.png,inline]\__q φ
+\__q[うにゅうシェルc３]No.3\_b[..\..\shell\master\u3.png,inline,--option=use_self_alpha]\__q
+\__q[うにゅうシェルc４]No.4\_b[..\..\shell\master\u4.png,inline]\__q φ
+\__q[うにゅうシェルc５]No.5\_b[..\..\shell\master\u5.png,inline]\__q φ
 \_q
-\![*]\q[No.1,うにゅうシェルc１]　\![*]\q[No.4,うにゅうシェルc４]
-\![*]\q[No.2,うにゅうシェルc２]　\![*]\q[No.5,うにゅうシェルc５]
-\![*]\q[No.3,うにゅうシェルc３]
-\_q
+
 
 ＊うにゅうシェルc１
 ＄ゴースト３うにゅう	１１

@@ -4,10 +4,12 @@
 
 ＊初期シェル選択
 ：\s[-1]シェルを選んで下さい。\*
-\_q
-\![*]\q[No.1,シェル１]　\![*]\q[No.4,シェル４]
-\![*]\q[No.2,シェル２]　\![*]\q[No.5,シェル５]
-\![*]\q[No.3,シェル３]　\![*]\q[No.6,シェル６]
+\_q\__q[シェル１]No.1\_b[..\..\shell\master\s1.png,inline]\__q φ
+\__q[シェル２]No.2\_b[..\..\shell\master\s2.png,inline]\__q φ
+\__q[シェル３]No.3\_b[..\..\shell\master\s3.png,inline]\__q
+\__q[シェル４]No.4\_b[..\..\shell\master\s4.png,inline]\__q φ
+\__q[シェル５]No.5\_b[..\..\shell\master\s5.png,inline]\__q φ
+\__q[シェル６]No.6\_b[..\..\shell\master\s6.png,inline]\__q
 \_q
 
 ＊シェル１
@@ -67,10 +69,11 @@
 
 ＊相方設定
 ：\s[-1]相方を選んで下さい。\*
-\_q
-\![*]\q[No.1,うにゅうシェル１]　\![*]\q[No.4,うにゅうシェル４]
-\![*]\q[No.2,うにゅうシェル２]　\![*]\q[No.5,うにゅうシェル５]
-\![*]\q[No.3,うにゅうシェル３]
+\_q\__q[うにゅうシェル１]No.1\_b[..\..\shell\master\u1.png,inline]\__q φ
+\__q[うにゅうシェル２]No.2\_b[..\..\shell\master\u2.png,inline]\__q φ
+\__q[うにゅうシェル３]No.3\_b[..\..\shell\master\u3.png,inline,--option=use_self_alpha]\__q
+\__q[うにゅうシェル４]No.4\_b[..\..\shell\master\u4.png,inline]\__q φ
+\__q[うにゅうシェル５]No.5\_b[..\..\shell\master\u5.png,inline]\__q φ
 \_q
 
 ＊うにゅうシェル１
@@ -149,3 +152,4 @@
 
 ＊ゴースト１うにゅう名前を空打ちされた
 ＞ゴースト１さくら名前を教えてもらった
+
