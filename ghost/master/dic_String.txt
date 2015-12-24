@@ -1,5 +1,40 @@
 
-＠homeurl
+＊sakura.recommendsites
+お役立ちTIPS
+
+
+＊sakura.recommendsites
+伺かアドベントカレンダー2015
+http://www.adventar.org/calendars/1192
+
+＊sakura.recommendsites
+伺かアドベントカレンダー2014
+http://www.adventar.org/calendars/691
+
+＊sakura.recommendsites
+開発関連サイト
+
+
+＊sakura.recommendsites
+UkaTecWiki
+http://wikiwiki.jp/ukatec/?FrontPage
+
+
+＊sakura.recommendsites
+UkaDoc Project
+http://ssp.shillest.net/ukadoc/manual/index.html
+
+
+＊sakura.recommendsites
+シェルを探すなら
+
+
+＊sakura.recommendsites
+freeshellWiki
+http://wikiwiki.jp/feeshell/
+
+＊sakura.recommendsites
+シェル配布元
 
 
 ＊sakura.recommendsites
@@ -12,11 +47,8 @@ http://tsunatsuki.web.fc2.com/nishikikai/
 http://gallnuts.webcrow.jp/index.shtml
 
 ＊sakura.portalsites
-ゴーストの使い方 - SSP
-http://keshiki.nobody.jp/
+SSPのバグ報告はこちら
 
-＊sakura.portalsites
--
 
 ＊sakura.portalsites
 SSP BUGTRAQ 
@@ -24,30 +56,15 @@ http://ssp.shillest.net/
 
 
 ＊sakura.portalsites
--
+ゴースト探すなら
 
-＊sakura.portalsites
-里々φ/整備班カスタム
-http://ms.shillest.net/satoriya.xhtml
-
-
-＊sakura.portalsites
-里々Wiki
-http://soliton.sub.jp/satori/
-
-
-＊sakura.portalsites
-freeshellWiki
-http://wikiwiki.jp/feeshell/
-
-
-
-＊sakura.portalsites
--
 
 ＊sakura.portalsites
 GHOST TOWN
 http://ghosttown.mikage.jp/
+
+＊sakura.portalsites
+総合情報サイト
 
 
 ＊sakura.portalsites
@@ -56,13 +73,15 @@ http://disc2.s56.xrea.com/
 
 
 ＊sakura.portalsites
-霊界通信
-http://ghost-log.sakuratan.com/
+Uka-Ni-Sphere
+http://www.ghost.sakura.tv/index.html
+
+
+＊sakura.portalsites
+ゴーストの感想などは
 
 
 ＊sakura.portalsites
 ゴースト回覧板３ｒｄ
 http://jbbs.shitaraba.net/computer/44300/
-
-
 
