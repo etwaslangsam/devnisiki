@@ -109,7 +109,7 @@
 ：リロードしたわ
 
 ＃────────
-＃インプット
+＃■インプット
 ＃────────
 ＊OnUserInput
 ＞（Reference0）を空打ちされた	（is_empty,（Reference1））
