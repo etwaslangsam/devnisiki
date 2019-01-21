@@ -3,8 +3,10 @@
 ＃最小化解除
 ＃────────
 ＊OnWindowStateRestore
-：\s[2]はっ！\w6\w9
-\s[4]寝落ちしてたわ……疲れてるのかしら。
+\0\s[2]はっ！\_w[1200]
+\s[4]\c寝落ちしてたわ・・・。\w5
+疲れてるのかしら？
+\e
 
 ＃────────
 ＃選択肢タイムアウト
@@ -50,53 +52,69 @@
 あとでインストールしておきましょ。
 
 ＃────────
-＃ネットワーク更新
+＃■ネットワーク更新
 ＃────────
 ＊OnUpdateBegin
-\0\s[5]さ、更新するぞ～！\e
+\0\s[5]さ、更新するぞ～！
+\e
 
 ＊OnUpdateReady
-\0\s[6]たしか（Reference0）個くらい更新したのよね。\w9\e
-
-＊OnUpdate.OnDownloadBegin
-\0\s[12]（Reference0）をアップロード、っと。\e
-
-＊OnUpdate.OnMD5CompareBegin
-\0\s[0]\_q
-あっち　（Reference0）
-こっち　（Reference1）
-\_q
+\0\s[6]たしか（Reference0）個くらい更新したのよね。
+\e
 
 ＊OnUpdateComplete
-\0（whenlist,（Reference0）==
-,none,\s[4]……って、まだ変わってないんだった。\w5\n早く開発しなきゃ。
-,changed,\s[5]ファイルアップロード完了！\w6\nあとは更新報告をしたら終わり！！
-）
+＞更新（Reference0）
+
+＊更新none
+\0\s[4]・・・って、まだ変わってないんだった。\w5
+早く開発しなきゃ。
+\e
+
+＊更新changed
+\0\s[5]ファイルアップロード完了！\w6
+あとは更新報告をしたら終わり！！
 \e
 
 ＊OnUpdateFailure
-\0（whenlist,（Reference0）==
-,timeout,\s[3]う～・・・時間切れでアップできなかったわ。\w5\n回線が重いみたいね。
-,md5 miss,\s[2]やだ！\w6md5エラーの報告きてるわ！\w5\nもう一度アップロードしなおせば直るかしら。
-,404,\s[4]うぐ・・・404・・・。\w5\nサーバー落ちたかしら。
-,\s[4]（Reference0）・・・どうすればいいんだっけこれ。
-）
+＞更新（Reference0）
+\0\s[4]（Reference0）・・・。
+どうすればいいんだっけ？
+\e
+
+＊更新timeout
+\0\s[3]う～・・・時間切れでアップできなかったわ。\w5
+回線が重いみたいね。
+\e
+
+＊更新md5 miss
+\0\s[2]やだ！\w3 md5エラーの報告きてるわ！\w5
+もう一度アップロードしなおせば直るかしら。
+\e
+
+＊更新404
+\s[4]うぐ・・・404・・・。\w5
+サーバー落ちたかしら？
 \e
 
 ＃────────
-＃ファイル作成
+＃■ファイル作成
 ＃────────
 ＊OnUpdatedataCreating
-：\s[3]忘れちゃいけない、更新ファイル……\w9
+\0\s[3]忘れちゃいけない、更新ファイルの作成っと。
+\e
 
 ＊OnUpdatedataCreated
-：\s[5]よし！\w6これで更新できるわ！
+\0\s[5]よし！\w5
+これで更新できるわ！
+\e
 
 ＊OnNarCreating
-：\s[5]さ、narファイルを作るわよ。\w9
+\0\s[5]さ、narファイルを作るわよ。
+\e
 
 ＊OnNarCreated
-：\s[12]narファイルが出来たわ！
+\0\s[12]出来た！
+\e
 
 ＃────────
 ＃キー押下
@@ -106,7 +124,7 @@
 
 ＊rが押された
 ＄辞書リロード	実行
-：リロードしたわ
+\0\s[5]リロードしたわ。
 
 ＃────────
 ＃■インプット
@@ -121,15 +139,9 @@
 ＞（Reference0）を空打ちされた	（compare,（Reference1）,close）
 
 ＃────────
-＃選択肢
+＃■選択肢
 ＃────────
-＊OnAnchorSelectEx
-＄選択ラベル	（Reference0）
-＄選択ＩＤ	（Reference1）
-＞（Reference1）
-
 ＊OnAnchorSelect
-＄選択ＩＤ	（Reference0）
 ＞（Reference0）
 
 ＃────────
@@ -153,32 +165,60 @@
 （set,やる気度,15）
 ：\s[3]ゴーストは三回死ぬ、か……。
 
+＃────────
+＃■重なり反応
+＃────────
+＊OnOverlap
+＄SAORI引数の計算	無効
+＞重なり反応（開発ゴースト）	（compare,（Reference0）,1-2）
+
+＊重なり反応1
+＄SAORI引数の計算	自動
+\p[1]（ゴースト１重なり）
+\p[2]\![move,-150,fix,1000,1]
+\e
+
+＊重なり反応2
+＄SAORI引数の計算	自動
+\p[1]（ゴースト２重なり）
+\p[2]\![move,-150,fix,1000,1]
+\e
+
+＊重なり反応3
+＄SAORI引数の計算	自動
+\p[1]（ゴースト３重なり）
+\p[2]\![move,-150,fix,1000,1]
+\e
 
 ＃────────
-＃web拍手
+＃■web拍手
 ＃────────
 ＊OnWebClap
 \![open,inputbox,拍手送信内容,-1,いいね！,--limit=1000]
+\0\s[0]コメントお待ちしてまーす。
+\e
 
 ＊拍手送信内容を教えてもらった
 \![execute,http-post,http://clap.webclap.com/clap.php?id=etwaslangsam,--param=message_body="にしき＠（拍手送信内容）",--async=webclap]
 ＄拍手送信内容	
 
 ＊拍手送信内容を空打ちされた
-：\_q(キャンセルしました)\_q
-
-＊拍手送信完了
-：\s[4]……バグ報告が来てるわね。\w9\w6
-対処しないとね。
-
-＊拍手送信失敗
-：\_q(「（R4）」によって失敗しました)\_q
+\0\s[4]キャンセル？
+\e
 
 ＊OnExecuteHTTPComplete
-＞拍手送信完了	（R1）==webclap
+＞拍手送信完了	（Reference1）==webclap
+
+＊拍手送信完了
+\0\s[0]送信しました。
+\e
 
 ＊OnExecuteHTTPFailure
-＞拍手送信失敗	（R1）==webclap
+＞拍手送信失敗	（Reference1）==webclap
+
+＊拍手送信失敗
+\0\s[4]「（Reference4）」で失敗。
+\e
 
 ＃────────
 ＃時間イベント
