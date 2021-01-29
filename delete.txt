@@ -5,3 +5,4 @@ ghost\master\dic_status.txt
 ghost\master\dic_reset.txt
 ghost\master\dic_levelup.txt
 ghost\master\dic_String.txt
+.gitignore
