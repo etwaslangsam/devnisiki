@@ -2,7 +2,7 @@ charset,Shift_JIS
 name,デベにしき
 type,ghost
 craftmanw,てにてに
-craftmanurl,http://ghosthacking.webcrow.jp/index.html 
+craftmanurl,https://sites.google.com/view/ghost-hacking/home
 homeurl,https://raw.githubusercontent.com/etwaslangsam/devnisiki/master/
 readme,readme.txt
 sakura.name,デベにしき
