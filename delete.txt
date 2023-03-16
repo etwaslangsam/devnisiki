@@ -1,7 +1,5 @@
 .gitignore
 ghost\master\dic_Times.txt
-ghost\master\dic_2ndghost.txt
-ghost\master\dic_3rdghost.txt
 ghost\master\dic_status.txt
 ghost\master\dic_reset.txt
 ghost\master\dic_levelup.txt

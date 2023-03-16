@@ -1,0 +1,53 @@
+＊OnHeadlinesenseBegin
+\0\s[5]ヘッドライセンサ、やってみたかったのよね～。\w9
+\s[4]まあ、読むのは私なんだけど‥‥。
+\p[1]\b[2]「（Reference0）」のヘッドラインを取得中です。\e
+
+＊OnHeadlinesense.OnFind
+＞読み上げフェーズ（Reference2）
+
+＊読み上げフェーズFirst
+\0\b[2]「（Reference0）」ヘッドラインです。
+（Reference3）
+＿続きを読む		
+＿サイトを開く		（Reference1）
+＿やめる		読み上げ中止
+
+＊読み上げフェーズFirst and Last
+：\b[2]「（Reference0）」ヘッドラインです。
+（Reference3）
+＿サイトを開く		（Reference1）
+＿やめる		読み上げ中止
+
+＊読み上げフェーズLast
+：\b[2]（Reference3）
+＿サイトを開く		（Reference1）
+＿やめる		読み上げ中止
+
+
+＊読み上げフェーズNext
+：\b[2]（Reference3）
+＿続きを読む		
+＿サイトを開く		（Reference1）
+＿やめる		読み上げ中止
+
+
+＊サイトを開く
+\![open,browzer,]
+
+＊読み上げ中止
+：\b[-1]
+
+＊OnHeadlinesenseComplete
+\p[1]更新されていませんでした。\e
+
+＊OnHeadlinesenseFailure
+\p[1]ヘッドラインセンス失敗。
+＞（Reference0）によりヘッドラインセンス失敗
+理由は（Reference0）だそうです。\e
+
+＊can't downloadによりヘッドラインセンス失敗
+\p[1]ダウンロードできませんでした。\e
+
+＊can't analyzeによりヘッドラインセンス失敗
+\p[1]‥‥解析失敗。\e

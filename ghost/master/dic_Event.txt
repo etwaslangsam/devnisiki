@@ -136,8 +136,13 @@
 ：\s[3]ゴーストは三回死ぬ、か……。
 
 ＃────────■選択肢
-＊OnAnchorSelect
-＞（Reference0）
+＊OnAnchorSelectEx
+＞OnAnchorSelectEx.URL	（compare_head,（Reference0）,http://）||（compare_head,（Reference0）,https://）
+＞（Reference1）
+
+＊OnAnchorSelectEx.URL
+＄スクリプトの一番頭	\C
+\0\j[（Reference1）]
 
 ＊OnChoiceTimeout
 \0\s[4]……あれ？\w6
@@ -272,10 +277,17 @@
 
 ＃────────
 ＊OnWebClap
-\![open,inputbox,拍手送信内容,,--limit=996]
+\![open,inputbox,拍手送信内容,,--limit=800]
 \0\e
 
+＠WCM_URL
+https://script.google.com/macros/s/AKfycbxHT6cacuEsMdGulS0c_a29X1pjDu5CUC3BPqAd9_wwskSn9l1oAAaN216XusA9siAX/exec
+＠送信元
+デベにしき
+
 ＊拍手送信内容を教えてもらった
+＄送信内容	（Reference1）
+＄メモ	手動コメント
 \0\_q（拍手送信内容）\_q
 \1（この内容で送信します）
 \_q
@@ -283,21 +295,24 @@
 \_q\e
 
 ＊SendClap
-\![execute,http-post,http://clap.webclap.com/clap.php?id=teniwa,--param=message_body="にしき＠（拍手送信内容）",--async=webclap]
-＄拍手送信内容	
+\![execute,http-post,（WCM_URL）,--param=message_body="（送信元）;（送信内容）;（メモ）",--async=webclap,--timeout=5]
+
 
 ＊拍手送信内容が空打ちされた
 ＄拍手送信内容	
 \0φ（中断しますφ）\e
 
+
 ＊OnExecuteHTTPComplete
-＞拍手送信完了	（Reference1）==webclap
-＊拍手送信完了
+＞（Reference1）送信完了
+
+＊webclap送信完了
 ＞（選択ラベル）が送信された
 \0（送信完了φ。ありがとうございますφ。）\e
 
-＊OnExecuteHTTPFailure
-＞拍手送信失敗	（Reference1）==webclap
 
-＊拍手送信失敗
+＊OnExecuteHTTPFailure
+＞webclap送信失敗
+
+＊webclap送信失敗
 \0φ（（Reference4）φ）\e
