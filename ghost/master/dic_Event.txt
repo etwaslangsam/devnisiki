@@ -4,6 +4,8 @@
 ＄文「＊」の重複回避	有効、起動中
 ＄単語群「＊」の重複回避	有効、トーク中
 ＄自動挿入ウェイトタイプ	一般
+＄喋り間隔誤差	５％
+＄自動挿入ウェイトの倍率	１００％
 
 ＊OnCacheSuspend
 ＞OnSatoriUnload
@@ -137,6 +139,8 @@
 
 ＃────────■選択肢
 ＊OnAnchorSelectEx
+＄選択ラベル	（Reference0）
+＄選択ＩＤ	（Reference1）
 ＞OnAnchorSelectEx.URL	（compare_head,（Reference0）,http://）||（compare_head,（Reference0）,https://）
 ＞（Reference1）
 
